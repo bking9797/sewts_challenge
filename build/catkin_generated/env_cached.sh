@@ -10,7 +10,7 @@ fi
 # ensure to not use different shell type which was set before
 CATKIN_SHELL=sh
 
-# source setup.sh from same directory as this file
+# source setup_cached.sh from same directory as this file
 _CATKIN_SETUP_DIR=$(cd "`dirname "$0"`" > /dev/null && pwd)
-. "$_CATKIN_SETUP_DIR/setup.sh"
+. "$_CATKIN_SETUP_DIR/setup_cached.sh"
 exec "$@"

@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/bryce/moveit_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bryce/moveit_ws/install -G Unix Makefiles
