@@ -29,7 +29,7 @@
     
   <!--Load and launch the joint trajectory controller-->
   <rosparam 
-    file ="$(find fanuc)/config/joint_trajectory_contoller.yaml"
+    file ="$(find fanuc)/config/joint_trajectory_controller.yaml"
     command="load"/>
   <node 
     name= "controller_spawner" 
