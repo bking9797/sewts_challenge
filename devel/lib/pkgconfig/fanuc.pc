@@ -1,0 +1,8 @@
+prefix=/home/bryce/moveit_ws/devel
+
+Name: fanuc
+Description: Description of fanuc
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp geometry_msgs rospy std_msgs
