@@ -4,6 +4,22 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="CRX-10iA_L">
+  
+  <link 
+    name="world"/>
+    
+  <joint 
+    name="base_joint" 
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="world" />
+    <child
+      link="base_link" />
+  </joint>
+  
   <link
     name="base_link">
     <inertial>
