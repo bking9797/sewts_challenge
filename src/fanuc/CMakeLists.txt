@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(CRX-10iA_L)
+project(fanuc)
 
 find_package(catkin REQUIRED COMPONENTS
 	message_generation
@@ -14,8 +14,8 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 catkin_package(CATKIN_DEPENDS
-	geometry_msgs
 	roscpp
+	geometry_msgs
 	rospy
 	std_msgs
 )
