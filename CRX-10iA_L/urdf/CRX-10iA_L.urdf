@@ -98,9 +98,9 @@
       xyz="0 0 -1" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.632251"
       effort="0"
-      velocity="0" />
+      velocity="2.094395" />
   </joint>
   <link
     name="Link_2">
@@ -156,9 +156,9 @@
       xyz="0 -1 0" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.283185"
       effort="0"
-      velocity="0" />
+      velocity="2.094395" />
   </joint>
   <link
     name="Link_3">
@@ -169,12 +169,12 @@
       <mass
         value="40" />
       <inertia
-        ixx="19.25"
-        ixy="0.22631"
-        ixz="-3.4354"
-        iyy="20.198"
-        iyz="2.4676"
-        izz="2.6464" />
+        ixx="19.2503226285715"
+        ixy="0.22631401696623"
+        ixz="-3.43542873586211"
+        iyy="20.1981005703131"
+        iyz="2.46761396132132"
+        izz="2.64638249491934" />
     </inertial>
     <visual>
       <origin
@@ -187,7 +187,7 @@
       <material
         name="">
         <color
-          rgba="0.79608 0.82353 0.93725 1" />
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
       </material>
     </visual>
     <collision>
@@ -214,9 +214,9 @@
       xyz="0 -1 0" />
     <limit
       lower="0"
-      upper="0"
+      upper="9.948377"
       effort="0"
-      velocity="0" />
+      velocity="3.141593" />
   </joint>
   <link
     name="Link_4">
@@ -227,12 +227,12 @@
       <mass
         value="40" />
       <inertia
-        ixx="19.25"
-        ixy="0.22631"
-        ixz="-3.4354"
-        iyy="20.198"
-        iyz="2.4676"
-        izz="2.6464" />
+        ixx="19.2503226285715"
+        ixy="0.22631401696623"
+        ixz="-3.43542873586211"
+        iyy="20.1981005703131"
+        iyz="2.46761396132132"
+        izz="2.64638249491934" />
     </inertial>
     <visual>
       <origin
@@ -245,7 +245,7 @@
       <material
         name="">
         <color
-          rgba="0.79608 0.82353 0.93725 1" />
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
       </material>
     </visual>
     <collision>
@@ -272,9 +272,9 @@
       xyz="-1 0 0" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.6323"
       effort="0"
-      velocity="0" />
+      velocity="3.1416" />
   </joint>
   <link
     name="Link_5">
@@ -285,12 +285,12 @@
       <mass
         value="40" />
       <inertia
-        ixx="19.25"
-        ixy="0.22631"
-        ixz="-3.4354"
-        iyy="20.198"
-        iyz="2.4676"
-        izz="2.6464" />
+        ixx="19.2503226285715"
+        ixy="0.22631401696623"
+        ixz="-3.43542873586211"
+        iyy="20.1981005703131"
+        iyz="2.46761396132132"
+        izz="2.64638249491934" />
     </inertial>
     <visual>
       <origin
@@ -303,7 +303,7 @@
       <material
         name="">
         <color
-          rgba="0.79608 0.82353 0.93725 1" />
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
       </material>
     </visual>
     <collision>
@@ -330,9 +330,9 @@
       xyz="0 -1 0" />
     <limit
       lower="0"
-      upper="0"
+      upper="6.2832"
       effort="0"
-      velocity="0" />
+      velocity="3.1416" />
   </joint>
   <link
     name="Link_6">
@@ -343,12 +343,12 @@
       <mass
         value="40" />
       <inertia
-        ixx="19.25"
-        ixy="0.22631"
-        ixz="-3.4354"
-        iyy="20.198"
-        iyz="2.4676"
-        izz="2.6464" />
+        ixx="19.2503226285715"
+        ixy="0.22631401696623"
+        ixz="-3.43542873586211"
+        iyy="20.1981005703131"
+        iyz="2.46761396132132"
+        izz="2.64638249491934" />
     </inertial>
     <visual>
       <origin
@@ -361,7 +361,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -376,7 +376,7 @@
   </link>
   <joint
     name="Joint_6"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0.16 0 0"
       rpy="0 0 0" />
@@ -385,6 +385,11 @@
     <child
       link="Link_6" />
     <axis
-      xyz="-1 0 0" />
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="7.854"
+      effort="0"
+      velocity="3.1416" />
   </joint>
 </robot>
