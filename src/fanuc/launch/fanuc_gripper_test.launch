@@ -9,7 +9,7 @@
   <!--Urdf file path-->
   <param 
     name="robot_description" 
-    textfile="$(find fanuc)/urdf/fanuc.urdf"/>
+    textfile="$(find fanuc)/urdf/fanuc_gripper.urdf"/>
     
   <!--spawn an empty gazebo world-->
   <include 
@@ -25,11 +25,11 @@
     name="spawn_urdf" 
     pkg="gazebo_ros" 
     type="spawn_model" 
-    args="-x $(arg arg_x) -y $(arg arg_y) -z $(arg arg_z) -Y $(arg arg_Y) -param robot_description -urdf -model fanuc -J Joint_1 0.0 -J Joint_2 0.0 -J Joint_3 0.0 -J Joint_4 0.0 -J Joint_5 0.0 -J Joint_6 0.0" />
+    args="-x $(arg arg_x) -y $(arg arg_y) -z $(arg arg_z) -Y $(arg arg_Y) -param robot_description -urdf -model fanuc -J Joint_1 0.0 -J Joint_2 0.0 -J Joint_3 0.0 -J Joint_4 0.0 -J Joint_5 0.0 -J Joint_6 0.0 -J robotiq_140_left_knuckle_joint 0.0" />
     
   <!--Load and launch the joint trajectory controller-->
   <rosparam 
-    file ="$(find fanuc)/config/joint_trajectory_controller.yaml"
+    file ="$(find fanuc)/config/joint_trajectory_controller_grip.yaml"
     command="load"/>
   <node 
     name= "controller_spawner" 

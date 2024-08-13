@@ -37,7 +37,7 @@
     type="spawner" 
     respawn="false"
     output="screen" 
-    args="joint_state_controller fanuc_arm_controller hand_ee_controller"/>
+    args="joint_state_controller fanuc_arm_controller"/> <!--hand_ee_controller"/>-->
 
   <!-- Robot State Publisher for TF of each joint: publishes all the current states of the joint, then RViz can visualize -->
   <node 
