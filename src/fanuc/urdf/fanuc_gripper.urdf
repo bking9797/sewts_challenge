@@ -791,19 +791,6 @@
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </actuator>
   </transmission>
-
-  <gazebo>
-    <plugin
-      name="control"
-      filename="libgazebo_ros_control.so">
-      <robotNamespace>/</robotNamespace>
-    </plugin>
-    <plugin 
-      name="gazebo_ros_control" 
-      filename="libgazebo_ros_control.so">
-      <robotNamespace>/</robotNamespace>
-    </plugin>
-  </gazebo>
   
   <gazebo
     reference="Link_1">
@@ -922,6 +909,19 @@
       <mimicJoint>robotiq_140_right_finger_tip_joint</mimicJoint>
       <multiplier>-1.0</multiplier>
       <offset>0.0</offset>
+    </plugin>
+  </gazebo>
+  
+  <gazebo>
+    <!--<plugin
+      name="control"
+      filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>-->
+    <plugin 
+      name="gazebo_ros_control" 
+      filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
     </plugin>
   </gazebo>
   

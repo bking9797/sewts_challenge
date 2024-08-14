@@ -5,6 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("fanuc_moveit_no_controller")
-subdirs("fanuc_moveit_with_controller")
+subdirs("fanuc_moveit_no_controllers")
+subdirs("fanuc_moveit_with_controllers")
 subdirs("fanuc")

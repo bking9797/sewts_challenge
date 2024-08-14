@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/bryce/moveit_ws/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/bryce/moveit_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/bryce/moveit_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/bryce/moveit_ws/src:$ROS_PACKAGE_PATH"

@@ -3,7 +3,7 @@
     name="model" />
   <param
     name="robot_description"
-    textfile="$(find CRX-10iA_L)/urdf/CRX-10iA_L.urdf" />
+    textfile="$(find fanuc)/urdf/fanuc_gripper.urdf" />
   <node
     name="joint_state_publisher_gui"
     pkg="joint_state_publisher_gui"
@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find CRX-10iA_L)/urdf.rviz" />
+    args="-d $(find fanuc)/urdf.rviz" />
 </launch>

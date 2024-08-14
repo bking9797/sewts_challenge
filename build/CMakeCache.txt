@@ -416,10 +416,16 @@ fanuc_moveit_no_controller_BINARY_DIR:STATIC=/home/bryce/moveit_ws/build/fanuc_m
 fanuc_moveit_no_controller_SOURCE_DIR:STATIC=/home/bryce/moveit_ws/src/fanuc_moveit_no_controller
 
 //Value Computed by CMake
-fanuc_moveit_with_controller_BINARY_DIR:STATIC=/home/bryce/moveit_ws/build/fanuc_moveit_with_controller
+fanuc_moveit_no_controllers_BINARY_DIR:STATIC=/home/bryce/moveit_ws/build/fanuc_moveit_no_controllers
 
 //Value Computed by CMake
-fanuc_moveit_with_controller_SOURCE_DIR:STATIC=/home/bryce/moveit_ws/src/fanuc_moveit_with_controller
+fanuc_moveit_no_controllers_SOURCE_DIR:STATIC=/home/bryce/moveit_ws/src/fanuc_moveit_no_controllers
+
+//Value Computed by CMake
+fanuc_moveit_with_controllers_BINARY_DIR:STATIC=/home/bryce/moveit_ws/build/fanuc_moveit_with_controllers
+
+//Value Computed by CMake
+fanuc_moveit_with_controllers_SOURCE_DIR:STATIC=/home/bryce/moveit_ws/src/fanuc_moveit_with_controllers
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
