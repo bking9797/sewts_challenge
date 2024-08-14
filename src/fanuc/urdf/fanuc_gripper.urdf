@@ -842,7 +842,43 @@
   </gazebo>
   
   <gazebo
-    reference="Link_6">
+    reference="robotiq_140_base_link">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="robotiq_140_left_knuckle_link">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="robotiq_140_right_knuckle_link">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="robotiq_140_left_finger_link">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="robotiq_140_right_finger_link">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="robotiq_140_left_inner_knuckle_link">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="robotiq_140_right_inner_knuckle_link">
     <selfCollide>true</selfCollide>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>

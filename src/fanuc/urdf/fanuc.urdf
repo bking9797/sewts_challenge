@@ -502,31 +502,37 @@
   <gazebo
     reference="Link_1">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_2">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_3">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_4">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_5">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_6">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
 </robot>
