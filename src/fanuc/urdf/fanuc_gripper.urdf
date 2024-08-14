@@ -60,8 +60,6 @@
       <mass value="3.84000000"/>
       <inertia ixx="0.02569997" ixy="-0.00000034" ixz="-0.00000014" iyy="0.02211221" iyz="0.00168942" izz="0.01667992"/>
     </inertial>
-
-
     <visual>
       <origin
         xyz="0 0 0"
@@ -102,7 +100,7 @@
     <limit
       lower="-3.31613"
       upper="3.31613"
-      effort="50"
+      effort="330"
       velocity="2.094395" />
   </joint>
   
@@ -113,7 +111,6 @@
       <mass value="11.52000000"/>
       <inertia ixx="0.67622107" ixy="0.00000567" ixz="0.00002455" iyy="0.66076284" iyz="-0.02211019" izz="0.05165074"/>
     </inertial>
-
     <visual>
       <origin
         xyz="0 0 0"
@@ -154,7 +151,7 @@
     <limit
       lower="-3.14159"
       upper="3.14159"
-      effort="45"
+      effort="150"
       velocity="2.094395" />
   </joint>
   
@@ -206,7 +203,7 @@
     <limit
       lower="-4.97419"
       upper="4.97419"
-      effort="40"
+      effort="55"
       velocity="3.141593" />
   </joint>
   
@@ -366,19 +363,11 @@
       velocity="3.1416" />
   </joint>
   
-  <link name="ee_link"/>
-  
-  <joint name="ee_fixed_joint" type="fixed">
-    <parent link="Link_6"/>
-    <child link="ee_link"/>
-    <origin rpy="0.0 0.0 0" xyz="0.0 0.0 0.0"/>
-  </joint>
-  
   <joint 
     name="robotiq_140_base_joint" 
     type="fixed">
     <parent 
-      link="ee_link"/>
+      link="Link_6"/>
     <child 
       link="robotiq_140_base_link"/>
     <origin 
@@ -419,7 +408,7 @@
     <child link="robotiq_140_left_knuckle_link"/>
     <axis xyz="0 0 1"/>
     <origin rpy="3.14 0.0 0.0" xyz="0.05490452 0.03060114 0.0"/>
-    <limit effort="1000" lower="-0.402" upper="0.402" velocity="2.0"/>
+    <limit effort="1000" lower="-0.3891" upper="0.3891" velocity="2.0"/>
   </joint>
     
   <joint 
@@ -429,7 +418,6 @@
     <child link="robotiq_140_right_knuckle_link"/>
     <axis xyz="0 0 1"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.05490452 -0.03060114 0.0"/>
-    <limit effort="1000" lower="-3.14" upper="3.14" velocity="100.0"/>
     <mimic joint="robotiq_140_left_knuckle_joint"/>
   </joint>
     
@@ -548,7 +536,6 @@
     <child link="robotiq_140_left_inner_knuckle_link"/>
     <axis xyz="0 0 1"/>
     <origin rpy="3.14 0.0 0.0" xyz="0.06142 0.0127 0"/>
-    <limit effort="0.1" lower="-3.14" upper="3.14" velocity="100.0"/>
     <mimic joint="robotiq_140_left_knuckle_joint" offset="0"/>
   </joint>
     
@@ -559,7 +546,6 @@
     <child link="robotiq_140_right_inner_knuckle_link"/>
     <axis xyz="0 0 1"/>
     <origin rpy="0 0 0" xyz="0.06142 -0.0127 0"/>
-    <limit effort="0.1" lower="-3.14" upper="3.14" velocity="100.0"/>
     <mimic joint="robotiq_140_left_knuckle_joint" offset="0"/>
   </joint>
     
@@ -616,7 +602,6 @@
     <child link="robotiq_140_left_finger_tip_link"/>
     <axis xyz="0 0 1"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.09441861 -0.03294127 0.0"/>
-    <limit effort="0.1" lower="-3.14" upper="3.14" velocity="100.0"/>
     <mimic joint="robotiq_140_left_knuckle_joint" multiplier="-1"/>
   </joint>
  
@@ -627,7 +612,6 @@
     <child link="robotiq_140_right_finger_tip_link"/>
     <axis xyz="0 0 1"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.09441861 -0.03294127  0.0"/>
-    <limit effort="0.1" lower="-3.14" upper="3.14" velocity="100.0"/>
     <mimic joint="robotiq_140_left_knuckle_joint" multiplier="-1"/>
   </joint>
  
@@ -824,31 +808,43 @@
   <gazebo
     reference="Link_1">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_2">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_3">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_4">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_5">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo
     reference="Link_6">
     <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  
+  <gazebo
+    reference="Link_6">
+    <selfCollide>true</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   
   <gazebo>
