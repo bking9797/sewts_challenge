@@ -1,8 +1,0 @@
-prefix=/home/bryce/moveit_ws/devel
-
-Name: fanuc_moveit_sim
-Description: Description of fanuc_moveit_sim
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

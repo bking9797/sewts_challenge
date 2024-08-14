@@ -54,14 +54,16 @@ CMAKE_BINARY_DIR = /home/bryce/moveit_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: fanuc_moveit_sim/all
+all: fanuc_moveit_no_controller/all
+all: fanuc_moveit_with_controller/all
 all: fanuc/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: fanuc_moveit_sim/preinstall
+preinstall: fanuc_moveit_no_controller/preinstall
+preinstall: fanuc_moveit_with_controller/preinstall
 preinstall: fanuc/preinstall
 
 .PHONY : preinstall
@@ -73,7 +75,8 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: fanuc_moveit_sim/clean
+clean: fanuc_moveit_no_controller/clean
+clean: fanuc_moveit_with_controller/clean
 clean: fanuc/clean
 
 .PHONY : clean
@@ -117,22 +120,40 @@ fanuc/clean: fanuc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : fanuc/clean
 
 #=============================================================================
-# Directory level rules for directory fanuc_moveit_sim
+# Directory level rules for directory fanuc_moveit_no_controller
 
 # Recursive "all" directory target.
-fanuc_moveit_sim/all:
+fanuc_moveit_no_controller/all:
 
-.PHONY : fanuc_moveit_sim/all
+.PHONY : fanuc_moveit_no_controller/all
 
 # Recursive "preinstall" directory target.
-fanuc_moveit_sim/preinstall:
+fanuc_moveit_no_controller/preinstall:
 
-.PHONY : fanuc_moveit_sim/preinstall
+.PHONY : fanuc_moveit_no_controller/preinstall
 
 # Recursive "clean" directory target.
-fanuc_moveit_sim/clean: fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
+fanuc_moveit_no_controller/clean: fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
-.PHONY : fanuc_moveit_sim/clean
+.PHONY : fanuc_moveit_no_controller/clean
+
+#=============================================================================
+# Directory level rules for directory fanuc_moveit_with_controller
+
+# Recursive "all" directory target.
+fanuc_moveit_with_controller/all:
+
+.PHONY : fanuc_moveit_with_controller/all
+
+# Recursive "preinstall" directory target.
+fanuc_moveit_with_controller/preinstall:
+
+.PHONY : fanuc_moveit_with_controller/preinstall
+
+# Recursive "clean" directory target.
+fanuc_moveit_with_controller/clean:
+
+.PHONY : fanuc_moveit_with_controller/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -436,31 +457,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/build.make fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/build.make fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/build
+fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/build.make fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/build.make fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bryce/moveit_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryce/moveit_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryce/moveit_ws/build/CMakeFiles 0
-.PHONY : fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/build.make fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : fanuc_moveit_sim/CMakeFiles/_catkin_empty_exported_target.dir/clean
+fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/build.make fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : fanuc_moveit_no_controller/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target fanuc/CMakeFiles/fanuc_xacro_generated_to_devel_space_.dir

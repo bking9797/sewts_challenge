@@ -131,7 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bryce/moveit_ws/build/gtest/cmake_install.cmake")
-  include("/home/bryce/moveit_ws/build/fanuc_moveit_sim/cmake_install.cmake")
+  include("/home/bryce/moveit_ws/build/fanuc_moveit_no_controller/cmake_install.cmake")
+  include("/home/bryce/moveit_ws/build/fanuc_moveit_with_controller/cmake_install.cmake")
   include("/home/bryce/moveit_ws/build/fanuc/cmake_install.cmake")
 
 endif()

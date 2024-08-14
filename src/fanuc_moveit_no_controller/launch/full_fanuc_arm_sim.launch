@@ -1,0 +1,13 @@
+<launch>
+  <!-- Launch fanuc robot launch file which loads the robot in Gazebo and spawns the controllers -->
+  <include file = "$(find fanuc)/launch/fanuc_gripper_test.launch" />
+  
+  <!-- Launch Moveit Move Group Node -->
+  <include file = "$(find fanuc_moveit_no_controller)/launch/move_group.launch" />
+  
+  <!-- Run Rviz and load the default configuration to see the state of the move_group node -->
+  <arg name="use_rviz" default="true" />
+  <include file="$(find fanuc_moveit_no_controller)/launch/moveit_rviz.launch" if="$(arg use_rviz)">
+    <arg name="rviz_config" value="$(find fanuc_moveit_no_controller)/launch/moveit.rviz"/>
+  </include>
+</launch>

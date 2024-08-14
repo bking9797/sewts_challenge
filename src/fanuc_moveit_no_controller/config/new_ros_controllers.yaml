@@ -1,0 +1,19 @@
+#Movit controller connecting follow_joint_trajectory controller with JointTrajectoryController
+
+controller_list:
+  - name: fanuc_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6
+  - name: ee_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - robotiq_140_left_knuckle_joint

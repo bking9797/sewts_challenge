@@ -1,2 +1,2 @@
-fanuc:fanuc_moveit_sim
+fanuc:fanuc_moveit_no_controller:fanuc_moveit_with_controller
 -DCATKIN_DEVEL_PREFIX=/home/bryce/moveit_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bryce/moveit_ws/install -G Unix Makefiles
